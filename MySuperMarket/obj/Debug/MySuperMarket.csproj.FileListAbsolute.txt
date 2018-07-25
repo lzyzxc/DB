@@ -1,0 +1,204 @@
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\ApplicationInsights.config
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\csc.exe
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\System.Collections.Immutable.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\System.Reflection.Metadata.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\vbc.exe
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\VBCSCompiler.exe
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\roslyn\VBCSCompiler.exe.config
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\MySuperMarket.dll.config
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\MySuperMarket.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\MySuperMarket.pdb
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Antlr3.Runtime.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\EntityFramework.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\EntityFramework.SqlServer.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.Agent.Intercept.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.DependencyCollector.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.Web.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.WindowsServer.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.ApplicationInsights.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Core.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Cookies.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Facebook.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Google.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.OAuth.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Twitter.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Web.Infrastructure.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Newtonsoft.Json.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Oracle.ManagedDataAccess.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Owin.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Helpers.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Mvc.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Optimization.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Razor.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Deployment.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Razor.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\WebGrease.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\EntityFramework.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\EntityFramework.SqlServer.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.DependencyCollector.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.Web.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AI.WindowsServer.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.ApplicationInsights.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Helpers.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Mvc.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Optimization.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.Razor.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Deployment.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Razor.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Antlr3.Runtime.pdb
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Newtonsoft.Json.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Core.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Facebook.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Cookies.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.OAuth.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Google.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Twitter.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.csprojResolveAssemblyReference.cache
+D:\db\MyOracle\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.dll
+D:\db\MyOracle\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.pdb
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\ApplicationInsights.config
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\csc.exe
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\System.Collections.Immutable.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\System.Reflection.Metadata.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\vbc.exe
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\VBCSCompiler.exe
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\roslyn\VBCSCompiler.exe.config
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\MySuperMarket.dll.config
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\MySuperMarket.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\MySuperMarket.pdb
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Antlr3.Runtime.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\EntityFramework.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\EntityFramework.SqlServer.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.Agent.Intercept.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.DependencyCollector.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.Web.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.WindowsServer.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.ApplicationInsights.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Core.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Cookies.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Facebook.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Google.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.OAuth.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Twitter.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Web.Infrastructure.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Newtonsoft.Json.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Oracle.ManagedDataAccess.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Owin.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Helpers.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Mvc.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Optimization.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Razor.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Deployment.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Razor.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\WebGrease.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\EntityFramework.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\EntityFramework.SqlServer.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.DependencyCollector.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.Web.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AI.WindowsServer.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.ApplicationInsights.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Helpers.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Mvc.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Optimization.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.Razor.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Deployment.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\System.Web.WebPages.Razor.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Antlr3.Runtime.pdb
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Newtonsoft.Json.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Core.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Facebook.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Cookies.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.OAuth.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Google.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.Twitter.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.csprojAssemblyReference.cache
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.csproj.CoreCompileInputs.cache
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.csproj.CopyComplete
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.dll
+D:\1_code\DB\新建文件夹 (2)\MySuperMarket\MySuperMarket\obj\Debug\MySuperMarket.pdb

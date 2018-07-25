@@ -1,0 +1,56 @@
+﻿@model MySuperMarket.Models.SALES_LOT
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SALES_LOT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MONEY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONEY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOT_NUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOT_NUMBER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INCOME.TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INCOME.TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCT.PRODUCT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCT.PRODUCT_ID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

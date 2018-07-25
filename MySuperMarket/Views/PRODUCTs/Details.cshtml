@@ -1,0 +1,58 @@
+﻿@model MySuperMarket.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PRODUCT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCT_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCT_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DISCOUNT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DISCOUNT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BATCH_NUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BATCH_NUMBER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCT_ATTRIBUTE.SUPPLIER_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCT_ATTRIBUTE.SUPPLIER_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SHELF.SHELF_AREA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SHELF.SHELF_AREA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BATCH_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

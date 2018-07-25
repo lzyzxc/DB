@@ -1,0 +1,42 @@
+﻿@model MySuperMarket.Models.INCOME
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>INCOME</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MONEY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONEY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INCOME_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INCOME_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TYPE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.INCOME_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

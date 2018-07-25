@@ -1,0 +1,58 @@
+﻿@model MySuperMarket.Models.STOCK
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>STOCK</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.STOCK_NUM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STOCK_NUM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STOCK_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STOCK_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EXPENSE.TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EXPENSE.TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PLAN.PRODUCT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLAN.PRODUCT_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCT.PRODUCT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCT.PRODUCT_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.STOCK_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

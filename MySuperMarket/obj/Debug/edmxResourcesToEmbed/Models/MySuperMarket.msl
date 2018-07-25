@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MySuperMarketStoreContainer" CdmEntityContainer="MyMarket">
+    <EntitySetMapping Name="EMPLOYEE">
+      <EntityTypeMapping TypeName="MySuperMarket.EMPLOYEE">
+        <MappingFragment StoreEntitySet="EMPLOYEE">
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+          <ScalarProperty Name="EMPLOYEE_NAME" ColumnName="EMPLOYEE_NAME" />
+          <ScalarProperty Name="SALARY" ColumnName="SALARY" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXPENSE">
+      <EntityTypeMapping TypeName="MySuperMarket.EXPENSE">
+        <MappingFragment StoreEntitySet="EXPENSE">
+          <ScalarProperty Name="EXPENSE_ID" ColumnName="EXPENSE_ID" />
+          <ScalarProperty Name="EXPENSE_DATE" ColumnName="EXPENSE_DATE" />
+          <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INCOME">
+      <EntityTypeMapping TypeName="MySuperMarket.INCOME">
+        <MappingFragment StoreEntitySet="INCOME">
+          <ScalarProperty Name="INCOME_ID" ColumnName="INCOME_ID" />
+          <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+          <ScalarProperty Name="INCOME_DATE" ColumnName="INCOME_DATE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLAN">
+      <EntityTypeMapping TypeName="MySuperMarket.PLAN">
+        <MappingFragment StoreEntitySet="PLAN">
+          <ScalarProperty Name="PLAN_ID" ColumnName="PLAN_ID" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="PLAN_NUM" ColumnName="PLAN_NUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCT">
+      <EntityTypeMapping TypeName="MySuperMarket.PRODUCT">
+        <MappingFragment StoreEntitySet="PRODUCT">
+          <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="PRODUCT_DATE" ColumnName="PRODUCT_DATE" />
+          <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+          <ScalarProperty Name="BATCH_NUMBER" ColumnName="BATCH_NUMBER" />
+          <ScalarProperty Name="SHEIF_ID" ColumnName="SHEIF_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCT_ATTRIBUTE">
+      <EntityTypeMapping TypeName="MySuperMarket.PRODUCT_ATTRIBUTE">
+        <MappingFragment StoreEntitySet="PRODUCT_ATTRIBUTE">
+          <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+          <ScalarProperty Name="EXP" ColumnName="EXP" />
+          <ScalarProperty Name="PURCHASE_PRICE" ColumnName="PURCHASE_PRICE" />
+          <ScalarProperty Name="SELL_PRICE" ColumnName="SELL_PRICE" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SALARY">
+      <EntityTypeMapping TypeName="MySuperMarket.SALARY">
+        <MappingFragment StoreEntitySet="SALARY">
+          <ScalarProperty Name="EXPENSE_ID" ColumnName="EXPENSE_ID" />
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+          <ScalarProperty Name="SALARY_DATE" ColumnName="SALARY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SALES_LOT">
+      <EntityTypeMapping TypeName="MySuperMarket.SALES_LOT">
+        <MappingFragment StoreEntitySet="SALES_LOT">
+          <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+          <ScalarProperty Name="LOT_DATE" ColumnName="LOT_DATE" />
+          <ScalarProperty Name="INCOME_ID" ColumnName="INCOME_ID" />
+          <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+          <ScalarProperty Name="LOT_NUMBER" ColumnName="LOT_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SHELF">
+      <EntityTypeMapping TypeName="MySuperMarket.SHELF">
+        <MappingFragment StoreEntitySet="SHELF">
+          <ScalarProperty Name="SHELF_ID" ColumnName="SHELF_ID" />
+          <ScalarProperty Name="SHELF_AREA" ColumnName="SHELF_AREA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPONSOR">
+      <EntityTypeMapping TypeName="MySuperMarket.SPONSOR">
+        <MappingFragment StoreEntitySet="SPONSOR">
+          <ScalarProperty Name="SPONSOR_ID" ColumnName="SPONSOR_ID" />
+          <ScalarProperty Name="SPONSOR_NAME" ColumnName="SPONSOR_NAME" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STOCK">
+      <EntityTypeMapping TypeName="MySuperMarket.STOCK">
+        <MappingFragment StoreEntitySet="STOCK">
+          <ScalarProperty Name="STOCK_ID" ColumnName="STOCK_ID" />
+          <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+          <ScalarProperty Name="PLAN_ID" ColumnName="PLAN_ID" />
+          <ScalarProperty Name="EXPENSE_ID" ColumnName="EXPENSE_ID" />
+          <ScalarProperty Name="STOCK_NUM" ColumnName="STOCK_NUM" />
+          <ScalarProperty Name="STOCK_DATE" ColumnName="STOCK_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPPLIER">
+      <EntityTypeMapping TypeName="MySuperMarket.SUPPLIER">
+        <MappingFragment StoreEntitySet="SUPPLIER">
+          <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+          <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPPORT">
+      <EntityTypeMapping TypeName="MySuperMarket.SUPPORT">
+        <MappingFragment StoreEntitySet="SUPPORT">
+          <ScalarProperty Name="SPONSOR_ID" ColumnName="SPONSOR_ID" />
+          <ScalarProperty Name="INCOME_ID" ColumnName="INCOME_ID" />
+          <ScalarProperty Name="SUPPORT_DATE" ColumnName="SUPPORT_DATE" />
+          <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIP">
+      <EntityTypeMapping TypeName="MySuperMarket.VIP">
+        <MappingFragment StoreEntitySet="VIP">
+          <ScalarProperty Name="VIP_ID" ColumnName="VIP_ID" />
+          <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+          <ScalarProperty Name="CREDITS" ColumnName="CREDITS" />
+          <ScalarProperty Name="VIP_NAME" ColumnName="VIP_NAME" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

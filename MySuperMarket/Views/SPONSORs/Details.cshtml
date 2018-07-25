@@ -1,0 +1,34 @@
+﻿@model MySuperMarket.Models.SPONSOR
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SPONSOR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SPONSOR_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SPONSOR_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PHONE_NUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHONE_NUMBER)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SPONSOR_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

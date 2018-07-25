@@ -1,0 +1,50 @@
+﻿@model MySuperMarket.Models.SUPPORT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SUPPORT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SUPPORT_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUPPORT_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MONEY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONEY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INCOME.TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INCOME.TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SPONSOR.SPONSOR_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SPONSOR.SPONSOR_NAME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

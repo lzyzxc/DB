@@ -1,0 +1,50 @@
+﻿@model MySuperMarket.Models.SALES_LOT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SALES_LOT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MONEY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONEY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOT_NUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOT_NUMBER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INCOME.TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INCOME.TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCT.PRODUCT_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCT.PRODUCT_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

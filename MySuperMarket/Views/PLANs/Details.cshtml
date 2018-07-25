@@ -1,0 +1,34 @@
+﻿@model MySuperMarket.Models.PLAN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PLAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PLAN_NUM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLAN_NUM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUCT_ATTRIBUTE.SUPPLIER_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUCT_ATTRIBUTE.SUPPLIER_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PLAN_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

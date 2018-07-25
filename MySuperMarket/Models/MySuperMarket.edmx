@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MySuperMarket.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="EMPLOYEE_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="SALARY" Type="number" Precision="12" Scale="0" />
+          <Property Name="SEX" Type="varchar2" MaxLength="5" />
+          <Property Name="PHONE_NUMBER" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="EXPENSE">
+          <Key>
+            <PropertyRef Name="EXPENSE_ID" />
+          </Key>
+          <Property Name="EXPENSE_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="EXPENSE_DATE" Type="date" />
+          <Property Name="MONEY" Type="number" Precision="12" Scale="0" />
+          <Property Name="TYPE" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="INCOME">
+          <Key>
+            <PropertyRef Name="INCOME_ID" />
+          </Key>
+          <Property Name="INCOME_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="MONEY" Type="number" Precision="12" Scale="0" />
+          <Property Name="INCOME_DATE" Type="date" />
+          <Property Name="TYPE" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="PLAN">
+          <Key>
+            <PropertyRef Name="PLAN_ID" />
+          </Key>
+          <Property Name="PLAN_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="PRODUCT_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="PLAN_NUM" Type="number" Precision="12" Scale="0" />
+        </EntityType>
+        <EntityType Name="PRODUCT">
+          <Key>
+            <PropertyRef Name="BATCH_ID" />
+          </Key>
+          <Property Name="BATCH_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="PRODUCT_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="PRODUCT_DATE" Type="date" />
+          <Property Name="DISCOUNT" Type="number" Precision="12" Scale="0" />
+          <Property Name="BATCH_NUMBER" Type="number" Precision="12" Scale="0" />
+          <Property Name="SHEIF_ID" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="PRODUCT_ATTRIBUTE">
+          <Key>
+            <PropertyRef Name="PRODUCT_ID" />
+          </Key>
+          <Property Name="PRODUCT_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SUPPLIER_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="PRODUCT_NAME" Type="varchar2" MaxLength="30" />
+          <Property Name="EXP" Type="number" Precision="12" Scale="0" />
+          <Property Name="PURCHASE_PRICE" Type="number" Precision="12" Scale="0" />
+          <Property Name="SELL_PRICE" Type="number" Precision="12" Scale="0" />
+          <Property Name="TOTAL" Type="number" Precision="12" Scale="0" />
+        </EntityType>
+        <EntityType Name="SALARY">
+          <Key>
+            <PropertyRef Name="EXPENSE_ID" />
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EXPENSE_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="EMPLOYEE_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SALARY_DATE" Type="date" />
+        </EntityType>
+        <EntityType Name="SALES_LOT">
+          <Key>
+            <PropertyRef Name="BATCH_ID" />
+            <PropertyRef Name="LOT_DATE" />
+          </Key>
+          <Property Name="BATCH_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="LOT_DATE" Type="date" Nullable="false" />
+          <Property Name="INCOME_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="MONEY" Type="number" Precision="12" Scale="0" />
+          <Property Name="LOT_NUMBER" Type="number" Precision="12" Scale="0" />
+        </EntityType>
+        <EntityType Name="SHELF">
+          <Key>
+            <PropertyRef Name="SHELF_ID" />
+          </Key>
+          <Property Name="SHELF_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SHELF_AREA" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="SPONSOR">
+          <Key>
+            <PropertyRef Name="SPONSOR_ID" />
+          </Key>
+          <Property Name="SPONSOR_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SPONSOR_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="PHONE_NUMBER" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="STOCK">
+          <Key>
+            <PropertyRef Name="STOCK_ID" />
+          </Key>
+          <Property Name="STOCK_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="BATCH_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="PLAN_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="EXPENSE_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="STOCK_NUM" Type="number" Precision="12" Scale="0" />
+          <Property Name="STOCK_DATE" Type="date" />
+        </EntityType>
+        <EntityType Name="SUPPLIER">
+          <Key>
+            <PropertyRef Name="SUPPLIER_ID" />
+          </Key>
+          <Property Name="SUPPLIER_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SUPPLIER_NAME" Type="varchar2" MaxLength="35" />
+          <Property Name="PHONE_NUMBER" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="SUPPORT">
+          <Key>
+            <PropertyRef Name="SPONSOR_ID" />
+            <PropertyRef Name="INCOME_ID" />
+          </Key>
+          <Property Name="SPONSOR_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="INCOME_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="SUPPORT_DATE" Type="date" />
+          <Property Name="MONEY" Type="number" Precision="12" Scale="0" />
+        </EntityType>
+        <EntityType Name="VIP">
+          <Key>
+            <PropertyRef Name="VIP_ID" />
+          </Key>
+          <Property Name="VIP_ID" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="EMPLOYEE_ID" Type="varchar2" MaxLength="20" />
+          <Property Name="CREDITS" Type="number" Precision="12" Scale="0" />
+          <Property Name="VIP_NAME" Type="varchar2" MaxLength="20" />
+          <Property Name="SEX" Type="varchar2" MaxLength="5" />
+          <Property Name="PHONE_NUMBER" Type="varchar2" MaxLength="20" />
+        </EntityType>
+        <Association Name="PLAN_FK1">
+          <End Role="PRODUCT_ATTRIBUTE" Type="Self.PRODUCT_ATTRIBUTE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PLAN" Type="Self.PLAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT_ATTRIBUTE">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Principal>
+            <Dependent Role="PLAN">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PROCUCT_FK1">
+          <End Role="PRODUCT_ATTRIBUTE" Type="Self.PRODUCT_ATTRIBUTE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT_ATTRIBUTE">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PRODUCT_ATTRIBUTE_FK1">
+          <End Role="SUPPLIER" Type="Self.SUPPLIER" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PRODUCT_ATTRIBUTE" Type="Self.PRODUCT_ATTRIBUTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SUPPLIER">
+              <PropertyRef Name="SUPPLIER_ID" />
+            </Principal>
+            <Dependent Role="PRODUCT_ATTRIBUTE">
+              <PropertyRef Name="SUPPLIER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PRODUCT_FK1">
+          <End Role="SHELF" Type="Self.SHELF" Multiplicity="0..1" />
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SHELF">
+              <PropertyRef Name="SHELF_ID" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="SHEIF_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALARY_FK1">
+          <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALARY" Type="Self.SALARY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EXPENSE">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Principal>
+            <Dependent Role="SALARY">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALARY_FK2">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALARY" Type="Self.SALARY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Principal>
+            <Dependent Role="SALARY">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALES_LOT_FK1">
+          <End Role="INCOME" Type="Self.INCOME" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALES_LOT" Type="Self.SALES_LOT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INCOME">
+              <PropertyRef Name="INCOME_ID" />
+            </Principal>
+            <Dependent Role="SALES_LOT">
+              <PropertyRef Name="INCOME_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALES_LOT_FK2">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALES_LOT" Type="Self.SALES_LOT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="BATCH_ID" />
+            </Principal>
+            <Dependent Role="SALES_LOT">
+              <PropertyRef Name="BATCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="STOCK_FK1">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="BATCH_ID" />
+            </Principal>
+            <Dependent Role="STOCK">
+              <PropertyRef Name="BATCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="STOCK_FK2">
+          <End Role="PLAN" Type="Self.PLAN" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLAN">
+              <PropertyRef Name="PLAN_ID" />
+            </Principal>
+            <Dependent Role="STOCK">
+              <PropertyRef Name="PLAN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="STOCK_FK3">
+          <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EXPENSE">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Principal>
+            <Dependent Role="STOCK">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SUPPORT_FK1">
+          <End Role="SPONSOR" Type="Self.SPONSOR" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SUPPORT" Type="Self.SUPPORT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SPONSOR">
+              <PropertyRef Name="SPONSOR_ID" />
+            </Principal>
+            <Dependent Role="SUPPORT">
+              <PropertyRef Name="SPONSOR_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SUPPORT_FK2">
+          <End Role="INCOME" Type="Self.INCOME" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SUPPORT" Type="Self.SUPPORT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INCOME">
+              <PropertyRef Name="INCOME_ID" />
+            </Principal>
+            <Dependent Role="SUPPORT">
+              <PropertyRef Name="INCOME_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VIP_FK1">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VIP" Type="Self.VIP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Principal>
+            <Dependent Role="VIP">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MySuperMarketStoreContainer">
+          <EntitySet Name="EMPLOYEE" EntityType="Self.EMPLOYEE" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="EXPENSE" EntityType="Self.EXPENSE" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="INCOME" EntityType="Self.INCOME" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="PLAN" EntityType="Self.PLAN" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="PRODUCT" EntityType="Self.PRODUCT" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="PRODUCT_ATTRIBUTE" EntityType="Self.PRODUCT_ATTRIBUTE" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="SALARY" EntityType="Self.SALARY" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="SALES_LOT" EntityType="Self.SALES_LOT" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="SHELF" EntityType="Self.SHELF" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="SPONSOR" EntityType="Self.SPONSOR" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="STOCK" EntityType="Self.STOCK" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="SUPPLIER" EntityType="Self.SUPPLIER" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="SUPPORT" EntityType="Self.SUPPORT" Schema="DBTA" store:Type="Tables" />
+          <EntitySet Name="VIP" EntityType="Self.VIP" Schema="DBTA" store:Type="Tables" />
+          <AssociationSet Name="PLAN_FK1" Association="Self.PLAN_FK1">
+            <End Role="PRODUCT_ATTRIBUTE" EntitySet="PRODUCT_ATTRIBUTE" />
+            <End Role="PLAN" EntitySet="PLAN" />
+          </AssociationSet>
+          <AssociationSet Name="PROCUCT_FK1" Association="Self.PROCUCT_FK1">
+            <End Role="PRODUCT_ATTRIBUTE" EntitySet="PRODUCT_ATTRIBUTE" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+          <AssociationSet Name="PRODUCT_ATTRIBUTE_FK1" Association="Self.PRODUCT_ATTRIBUTE_FK1">
+            <End Role="SUPPLIER" EntitySet="SUPPLIER" />
+            <End Role="PRODUCT_ATTRIBUTE" EntitySet="PRODUCT_ATTRIBUTE" />
+          </AssociationSet>
+          <AssociationSet Name="PRODUCT_FK1" Association="Self.PRODUCT_FK1">
+            <End Role="SHELF" EntitySet="SHELF" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+          <AssociationSet Name="SALARY_FK1" Association="Self.SALARY_FK1">
+            <End Role="EXPENSE" EntitySet="EXPENSE" />
+            <End Role="SALARY" EntitySet="SALARY" />
+          </AssociationSet>
+          <AssociationSet Name="SALARY_FK2" Association="Self.SALARY_FK2">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="SALARY" EntitySet="SALARY" />
+          </AssociationSet>
+          <AssociationSet Name="SALES_LOT_FK1" Association="Self.SALES_LOT_FK1">
+            <End Role="INCOME" EntitySet="INCOME" />
+            <End Role="SALES_LOT" EntitySet="SALES_LOT" />
+          </AssociationSet>
+          <AssociationSet Name="SALES_LOT_FK2" Association="Self.SALES_LOT_FK2">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="SALES_LOT" EntitySet="SALES_LOT" />
+          </AssociationSet>
+          <AssociationSet Name="STOCK_FK1" Association="Self.STOCK_FK1">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="STOCK" EntitySet="STOCK" />
+          </AssociationSet>
+          <AssociationSet Name="STOCK_FK2" Association="Self.STOCK_FK2">
+            <End Role="PLAN" EntitySet="PLAN" />
+            <End Role="STOCK" EntitySet="STOCK" />
+          </AssociationSet>
+          <AssociationSet Name="STOCK_FK3" Association="Self.STOCK_FK3">
+            <End Role="EXPENSE" EntitySet="EXPENSE" />
+            <End Role="STOCK" EntitySet="STOCK" />
+          </AssociationSet>
+          <AssociationSet Name="SUPPORT_FK1" Association="Self.SUPPORT_FK1">
+            <End Role="SPONSOR" EntitySet="SPONSOR" />
+            <End Role="SUPPORT" EntitySet="SUPPORT" />
+          </AssociationSet>
+          <AssociationSet Name="SUPPORT_FK2" Association="Self.SUPPORT_FK2">
+            <End Role="INCOME" EntitySet="INCOME" />
+            <End Role="SUPPORT" EntitySet="SUPPORT" />
+          </AssociationSet>
+          <AssociationSet Name="VIP_FK1" Association="Self.VIP_FK1">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="VIP" EntitySet="VIP" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MySuperMarket" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMPLOYEE_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SALARY" Type="Int64" />
+          <Property Name="SEX" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SALARY1" Relationship="Self.SALARY_FK2" FromRole="EMPLOYEE" ToRole="SALARY" />
+          <NavigationProperty Name="VIP" Relationship="Self.VIP_FK1" FromRole="EMPLOYEE" ToRole="VIP" />
+        </EntityType>
+        <EntityType Name="EXPENSE">
+          <Key>
+            <PropertyRef Name="EXPENSE_ID" />
+          </Key>
+          <Property Name="EXPENSE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EXPENSE_DATE" Type="DateTime" />
+          <Property Name="MONEY" Type="Int64" />
+          <Property Name="TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SALARY" Relationship="Self.SALARY_FK1" FromRole="EXPENSE" ToRole="SALARY" />
+          <NavigationProperty Name="STOCK" Relationship="Self.STOCK_FK3" FromRole="EXPENSE" ToRole="STOCK" />
+        </EntityType>
+        <EntityType Name="INCOME">
+          <Key>
+            <PropertyRef Name="INCOME_ID" />
+          </Key>
+          <Property Name="INCOME_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MONEY" Type="Int64" />
+          <Property Name="INCOME_DATE" Type="DateTime" />
+          <Property Name="TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SALES_LOT" Relationship="Self.SALES_LOT_FK1" FromRole="INCOME" ToRole="SALES_LOT" />
+          <NavigationProperty Name="SUPPORT" Relationship="Self.SUPPORT_FK2" FromRole="INCOME" ToRole="SUPPORT" />
+        </EntityType>
+        <EntityType Name="PLAN">
+          <Key>
+            <PropertyRef Name="PLAN_ID" />
+          </Key>
+          <Property Name="PLAN_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRODUCT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PLAN_NUM" Type="Int64" />
+          <NavigationProperty Name="PRODUCT_ATTRIBUTE" Relationship="Self.PLAN_FK1" FromRole="PLAN" ToRole="PRODUCT_ATTRIBUTE" />
+          <NavigationProperty Name="STOCK" Relationship="Self.STOCK_FK2" FromRole="PLAN" ToRole="STOCK" />
+        </EntityType>
+        <EntityType Name="PRODUCT">
+          <Key>
+            <PropertyRef Name="BATCH_ID" />
+          </Key>
+          <Property Name="BATCH_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRODUCT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCT_DATE" Type="DateTime" />
+          <Property Name="DISCOUNT" Type="Int64" />
+          <Property Name="BATCH_NUMBER" Type="Int64" />
+          <Property Name="SHEIF_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PRODUCT_ATTRIBUTE" Relationship="Self.PROCUCT_FK1" FromRole="PRODUCT" ToRole="PRODUCT_ATTRIBUTE" />
+          <NavigationProperty Name="SHELF" Relationship="Self.PRODUCT_FK1" FromRole="PRODUCT" ToRole="SHELF" />
+          <NavigationProperty Name="SALES_LOT" Relationship="Self.SALES_LOT_FK2" FromRole="PRODUCT" ToRole="SALES_LOT" />
+          <NavigationProperty Name="STOCK" Relationship="Self.STOCK_FK1" FromRole="PRODUCT" ToRole="STOCK" />
+        </EntityType>
+        <EntityType Name="PRODUCT_ATTRIBUTE">
+          <Key>
+            <PropertyRef Name="PRODUCT_ID" />
+          </Key>
+          <Property Name="PRODUCT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SUPPLIER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCT_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EXP" Type="Int64" />
+          <Property Name="PURCHASE_PRICE" Type="Int64" />
+          <Property Name="SELL_PRICE" Type="Int64" />
+          <Property Name="TOTAL" Type="Int64" />
+          <NavigationProperty Name="PLAN" Relationship="Self.PLAN_FK1" FromRole="PRODUCT_ATTRIBUTE" ToRole="PLAN" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.PROCUCT_FK1" FromRole="PRODUCT_ATTRIBUTE" ToRole="PRODUCT" />
+          <NavigationProperty Name="SUPPLIER" Relationship="Self.PRODUCT_ATTRIBUTE_FK1" FromRole="PRODUCT_ATTRIBUTE" ToRole="SUPPLIER" />
+        </EntityType>
+        <EntityType Name="SALARY">
+          <Key>
+            <PropertyRef Name="EXPENSE_ID" />
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EXPENSE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMPLOYEE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SALARY_DATE" Type="DateTime" />
+          <NavigationProperty Name="EMPLOYEE" Relationship="Self.SALARY_FK2" FromRole="SALARY" ToRole="EMPLOYEE" />
+          <NavigationProperty Name="EXPENSE" Relationship="Self.SALARY_FK1" FromRole="SALARY" ToRole="EXPENSE" />
+        </EntityType>
+        <EntityType Name="SALES_LOT">
+          <Key>
+            <PropertyRef Name="BATCH_ID" />
+            <PropertyRef Name="LOT_DATE" />
+          </Key>
+          <Property Name="BATCH_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LOT_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="INCOME_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MONEY" Type="Int64" />
+          <Property Name="LOT_NUMBER" Type="Int64" />
+          <NavigationProperty Name="INCOME" Relationship="Self.SALES_LOT_FK1" FromRole="SALES_LOT" ToRole="INCOME" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.SALES_LOT_FK2" FromRole="SALES_LOT" ToRole="PRODUCT" />
+        </EntityType>
+        <EntityType Name="SHELF">
+          <Key>
+            <PropertyRef Name="SHELF_ID" />
+          </Key>
+          <Property Name="SHELF_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SHELF_AREA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.PRODUCT_FK1" FromRole="SHELF" ToRole="PRODUCT" />
+        </EntityType>
+        <EntityType Name="SPONSOR">
+          <Key>
+            <PropertyRef Name="SPONSOR_ID" />
+          </Key>
+          <Property Name="SPONSOR_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SPONSOR_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SUPPORT" Relationship="Self.SUPPORT_FK1" FromRole="SPONSOR" ToRole="SUPPORT" />
+        </EntityType>
+        <EntityType Name="STOCK">
+          <Key>
+            <PropertyRef Name="STOCK_ID" />
+          </Key>
+          <Property Name="STOCK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BATCH_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PLAN_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EXPENSE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="STOCK_NUM" Type="Int64" />
+          <Property Name="STOCK_DATE" Type="DateTime" />
+          <NavigationProperty Name="EXPENSE" Relationship="Self.STOCK_FK3" FromRole="STOCK" ToRole="EXPENSE" />
+          <NavigationProperty Name="PLAN" Relationship="Self.STOCK_FK2" FromRole="STOCK" ToRole="PLAN" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.STOCK_FK1" FromRole="STOCK" ToRole="PRODUCT" />
+        </EntityType>
+        <EntityType Name="SUPPLIER">
+          <Key>
+            <PropertyRef Name="SUPPLIER_ID" />
+          </Key>
+          <Property Name="SUPPLIER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SUPPLIER_NAME" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PRODUCT_ATTRIBUTE" Relationship="Self.PRODUCT_ATTRIBUTE_FK1" FromRole="SUPPLIER" ToRole="PRODUCT_ATTRIBUTE" />
+        </EntityType>
+        <EntityType Name="SUPPORT">
+          <Key>
+            <PropertyRef Name="SPONSOR_ID" />
+            <PropertyRef Name="INCOME_ID" />
+          </Key>
+          <Property Name="SPONSOR_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="INCOME_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SUPPORT_DATE" Type="DateTime" />
+          <Property Name="MONEY" Type="Int64" />
+          <NavigationProperty Name="INCOME" Relationship="Self.SUPPORT_FK2" FromRole="SUPPORT" ToRole="INCOME" />
+          <NavigationProperty Name="SPONSOR" Relationship="Self.SUPPORT_FK1" FromRole="SUPPORT" ToRole="SPONSOR" />
+        </EntityType>
+        <EntityType Name="VIP">
+          <Key>
+            <PropertyRef Name="VIP_ID" />
+          </Key>
+          <Property Name="VIP_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EMPLOYEE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CREDITS" Type="Int64" />
+          <Property Name="VIP_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SEX" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE_NUMBER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="EMPLOYEE" Relationship="Self.VIP_FK1" FromRole="VIP" ToRole="EMPLOYEE" />
+        </EntityType>
+        <Association Name="SALARY_FK2">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALARY" Type="Self.SALARY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Principal>
+            <Dependent Role="SALARY">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VIP_FK1">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VIP" Type="Self.VIP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Principal>
+            <Dependent Role="VIP">
+              <PropertyRef Name="EMPLOYEE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALARY_FK1">
+          <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALARY" Type="Self.SALARY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EXPENSE">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Principal>
+            <Dependent Role="SALARY">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="STOCK_FK3">
+          <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EXPENSE">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Principal>
+            <Dependent Role="STOCK">
+              <PropertyRef Name="EXPENSE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALES_LOT_FK1">
+          <End Role="INCOME" Type="Self.INCOME" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALES_LOT" Type="Self.SALES_LOT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INCOME">
+              <PropertyRef Name="INCOME_ID" />
+            </Principal>
+            <Dependent Role="SALES_LOT">
+              <PropertyRef Name="INCOME_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SUPPORT_FK2">
+          <End Role="INCOME" Type="Self.INCOME" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SUPPORT" Type="Self.SUPPORT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="INCOME">
+              <PropertyRef Name="INCOME_ID" />
+            </Principal>
+            <Dependent Role="SUPPORT">
+              <PropertyRef Name="INCOME_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PLAN_FK1">
+          <End Role="PRODUCT_ATTRIBUTE" Type="Self.PRODUCT_ATTRIBUTE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PLAN" Type="Self.PLAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT_ATTRIBUTE">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Principal>
+            <Dependent Role="PLAN">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="STOCK_FK2">
+          <End Role="PLAN" Type="Self.PLAN" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PLAN">
+              <PropertyRef Name="PLAN_ID" />
+            </Principal>
+            <Dependent Role="STOCK">
+              <PropertyRef Name="PLAN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PROCUCT_FK1">
+          <End Role="PRODUCT_ATTRIBUTE" Type="Self.PRODUCT_ATTRIBUTE" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT_ATTRIBUTE">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="PRODUCT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PRODUCT_FK1">
+          <End Role="SHELF" Type="Self.SHELF" Multiplicity="0..1" />
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SHELF">
+              <PropertyRef Name="SHELF_ID" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="SHEIF_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SALES_LOT_FK2">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SALES_LOT" Type="Self.SALES_LOT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="BATCH_ID" />
+            </Principal>
+            <Dependent Role="SALES_LOT">
+              <PropertyRef Name="BATCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="STOCK_FK1">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STOCK" Type="Self.STOCK" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="BATCH_ID" />
+            </Principal>
+            <Dependent Role="STOCK">
+              <PropertyRef Name="BATCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PRODUCT_ATTRIBUTE_FK1">
+          <End Role="SUPPLIER" Type="Self.SUPPLIER" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PRODUCT_ATTRIBUTE" Type="Self.PRODUCT_ATTRIBUTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SUPPLIER">
+              <PropertyRef Name="SUPPLIER_ID" />
+            </Principal>
+            <Dependent Role="PRODUCT_ATTRIBUTE">
+              <PropertyRef Name="SUPPLIER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SUPPORT_FK1">
+          <End Role="SPONSOR" Type="Self.SPONSOR" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SUPPORT" Type="Self.SUPPORT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SPONSOR">
+              <PropertyRef Name="SPONSOR_ID" />
+            </Principal>
+            <Dependent Role="SUPPORT">
+              <PropertyRef Name="SPONSOR_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MyMarket" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EMPLOYEE" EntityType="Self.EMPLOYEE" />
+          <EntitySet Name="EXPENSE" EntityType="Self.EXPENSE" />
+          <EntitySet Name="INCOME" EntityType="Self.INCOME" />
+          <EntitySet Name="PLAN" EntityType="Self.PLAN" />
+          <EntitySet Name="PRODUCT" EntityType="Self.PRODUCT" />
+          <EntitySet Name="PRODUCT_ATTRIBUTE" EntityType="Self.PRODUCT_ATTRIBUTE" />
+          <EntitySet Name="SALARY" EntityType="Self.SALARY" />
+          <EntitySet Name="SALES_LOT" EntityType="Self.SALES_LOT" />
+          <EntitySet Name="SHELF" EntityType="Self.SHELF" />
+          <EntitySet Name="SPONSOR" EntityType="Self.SPONSOR" />
+          <EntitySet Name="STOCK" EntityType="Self.STOCK" />
+          <EntitySet Name="SUPPLIER" EntityType="Self.SUPPLIER" />
+          <EntitySet Name="SUPPORT" EntityType="Self.SUPPORT" />
+          <EntitySet Name="VIP" EntityType="Self.VIP" />
+          <AssociationSet Name="SALARY_FK2" Association="Self.SALARY_FK2">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="SALARY" EntitySet="SALARY" />
+          </AssociationSet>
+          <AssociationSet Name="VIP_FK1" Association="Self.VIP_FK1">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="VIP" EntitySet="VIP" />
+          </AssociationSet>
+          <AssociationSet Name="SALARY_FK1" Association="Self.SALARY_FK1">
+            <End Role="EXPENSE" EntitySet="EXPENSE" />
+            <End Role="SALARY" EntitySet="SALARY" />
+          </AssociationSet>
+          <AssociationSet Name="STOCK_FK3" Association="Self.STOCK_FK3">
+            <End Role="EXPENSE" EntitySet="EXPENSE" />
+            <End Role="STOCK" EntitySet="STOCK" />
+          </AssociationSet>
+          <AssociationSet Name="SALES_LOT_FK1" Association="Self.SALES_LOT_FK1">
+            <End Role="INCOME" EntitySet="INCOME" />
+            <End Role="SALES_LOT" EntitySet="SALES_LOT" />
+          </AssociationSet>
+          <AssociationSet Name="SUPPORT_FK2" Association="Self.SUPPORT_FK2">
+            <End Role="INCOME" EntitySet="INCOME" />
+            <End Role="SUPPORT" EntitySet="SUPPORT" />
+          </AssociationSet>
+          <AssociationSet Name="PLAN_FK1" Association="Self.PLAN_FK1">
+            <End Role="PRODUCT_ATTRIBUTE" EntitySet="PRODUCT_ATTRIBUTE" />
+            <End Role="PLAN" EntitySet="PLAN" />
+          </AssociationSet>
+          <AssociationSet Name="STOCK_FK2" Association="Self.STOCK_FK2">
+            <End Role="PLAN" EntitySet="PLAN" />
+            <End Role="STOCK" EntitySet="STOCK" />
+          </AssociationSet>
+          <AssociationSet Name="PROCUCT_FK1" Association="Self.PROCUCT_FK1">
+            <End Role="PRODUCT_ATTRIBUTE" EntitySet="PRODUCT_ATTRIBUTE" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+          <AssociationSet Name="PRODUCT_FK1" Association="Self.PRODUCT_FK1">
+            <End Role="SHELF" EntitySet="SHELF" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+          <AssociationSet Name="SALES_LOT_FK2" Association="Self.SALES_LOT_FK2">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="SALES_LOT" EntitySet="SALES_LOT" />
+          </AssociationSet>
+          <AssociationSet Name="STOCK_FK1" Association="Self.STOCK_FK1">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="STOCK" EntitySet="STOCK" />
+          </AssociationSet>
+          <AssociationSet Name="PRODUCT_ATTRIBUTE_FK1" Association="Self.PRODUCT_ATTRIBUTE_FK1">
+            <End Role="SUPPLIER" EntitySet="SUPPLIER" />
+            <End Role="PRODUCT_ATTRIBUTE" EntitySet="PRODUCT_ATTRIBUTE" />
+          </AssociationSet>
+          <AssociationSet Name="SUPPORT_FK1" Association="Self.SUPPORT_FK1">
+            <End Role="SPONSOR" EntitySet="SPONSOR" />
+            <End Role="SUPPORT" EntitySet="SUPPORT" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MySuperMarketStoreContainer" CdmEntityContainer="MyMarket">
+          <EntitySetMapping Name="EMPLOYEE">
+            <EntityTypeMapping TypeName="MySuperMarket.EMPLOYEE">
+              <MappingFragment StoreEntitySet="EMPLOYEE">
+                <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+                <ScalarProperty Name="EMPLOYEE_NAME" ColumnName="EMPLOYEE_NAME" />
+                <ScalarProperty Name="SALARY" ColumnName="SALARY" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EXPENSE">
+            <EntityTypeMapping TypeName="MySuperMarket.EXPENSE">
+              <MappingFragment StoreEntitySet="EXPENSE">
+                <ScalarProperty Name="EXPENSE_ID" ColumnName="EXPENSE_ID" />
+                <ScalarProperty Name="EXPENSE_DATE" ColumnName="EXPENSE_DATE" />
+                <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INCOME">
+            <EntityTypeMapping TypeName="MySuperMarket.INCOME">
+              <MappingFragment StoreEntitySet="INCOME">
+                <ScalarProperty Name="INCOME_ID" ColumnName="INCOME_ID" />
+                <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+                <ScalarProperty Name="INCOME_DATE" ColumnName="INCOME_DATE" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PLAN">
+            <EntityTypeMapping TypeName="MySuperMarket.PLAN">
+              <MappingFragment StoreEntitySet="PLAN">
+                <ScalarProperty Name="PLAN_ID" ColumnName="PLAN_ID" />
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="PLAN_NUM" ColumnName="PLAN_NUM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCT">
+            <EntityTypeMapping TypeName="MySuperMarket.PRODUCT">
+              <MappingFragment StoreEntitySet="PRODUCT">
+                <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="PRODUCT_DATE" ColumnName="PRODUCT_DATE" />
+                <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+                <ScalarProperty Name="BATCH_NUMBER" ColumnName="BATCH_NUMBER" />
+                <ScalarProperty Name="SHEIF_ID" ColumnName="SHEIF_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCT_ATTRIBUTE">
+            <EntityTypeMapping TypeName="MySuperMarket.PRODUCT_ATTRIBUTE">
+              <MappingFragment StoreEntitySet="PRODUCT_ATTRIBUTE">
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+                <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+                <ScalarProperty Name="EXP" ColumnName="EXP" />
+                <ScalarProperty Name="PURCHASE_PRICE" ColumnName="PURCHASE_PRICE" />
+                <ScalarProperty Name="SELL_PRICE" ColumnName="SELL_PRICE" />
+                <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SALARY">
+            <EntityTypeMapping TypeName="MySuperMarket.SALARY">
+              <MappingFragment StoreEntitySet="SALARY">
+                <ScalarProperty Name="EXPENSE_ID" ColumnName="EXPENSE_ID" />
+                <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+                <ScalarProperty Name="SALARY_DATE" ColumnName="SALARY_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SALES_LOT">
+            <EntityTypeMapping TypeName="MySuperMarket.SALES_LOT">
+              <MappingFragment StoreEntitySet="SALES_LOT">
+                <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+                <ScalarProperty Name="LOT_DATE" ColumnName="LOT_DATE" />
+                <ScalarProperty Name="INCOME_ID" ColumnName="INCOME_ID" />
+                <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+                <ScalarProperty Name="LOT_NUMBER" ColumnName="LOT_NUMBER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SHELF">
+            <EntityTypeMapping TypeName="MySuperMarket.SHELF">
+              <MappingFragment StoreEntitySet="SHELF">
+                <ScalarProperty Name="SHELF_ID" ColumnName="SHELF_ID" />
+                <ScalarProperty Name="SHELF_AREA" ColumnName="SHELF_AREA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SPONSOR">
+            <EntityTypeMapping TypeName="MySuperMarket.SPONSOR">
+              <MappingFragment StoreEntitySet="SPONSOR">
+                <ScalarProperty Name="SPONSOR_ID" ColumnName="SPONSOR_ID" />
+                <ScalarProperty Name="SPONSOR_NAME" ColumnName="SPONSOR_NAME" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STOCK">
+            <EntityTypeMapping TypeName="MySuperMarket.STOCK">
+              <MappingFragment StoreEntitySet="STOCK">
+                <ScalarProperty Name="STOCK_ID" ColumnName="STOCK_ID" />
+                <ScalarProperty Name="BATCH_ID" ColumnName="BATCH_ID" />
+                <ScalarProperty Name="PLAN_ID" ColumnName="PLAN_ID" />
+                <ScalarProperty Name="EXPENSE_ID" ColumnName="EXPENSE_ID" />
+                <ScalarProperty Name="STOCK_NUM" ColumnName="STOCK_NUM" />
+                <ScalarProperty Name="STOCK_DATE" ColumnName="STOCK_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUPPLIER">
+            <EntityTypeMapping TypeName="MySuperMarket.SUPPLIER">
+              <MappingFragment StoreEntitySet="SUPPLIER">
+                <ScalarProperty Name="SUPPLIER_ID" ColumnName="SUPPLIER_ID" />
+                <ScalarProperty Name="SUPPLIER_NAME" ColumnName="SUPPLIER_NAME" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUPPORT">
+            <EntityTypeMapping TypeName="MySuperMarket.SUPPORT">
+              <MappingFragment StoreEntitySet="SUPPORT">
+                <ScalarProperty Name="SPONSOR_ID" ColumnName="SPONSOR_ID" />
+                <ScalarProperty Name="INCOME_ID" ColumnName="INCOME_ID" />
+                <ScalarProperty Name="SUPPORT_DATE" ColumnName="SUPPORT_DATE" />
+                <ScalarProperty Name="MONEY" ColumnName="MONEY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VIP">
+            <EntityTypeMapping TypeName="MySuperMarket.VIP">
+              <MappingFragment StoreEntitySet="VIP">
+                <ScalarProperty Name="VIP_ID" ColumnName="VIP_ID" />
+                <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+                <ScalarProperty Name="CREDITS" ColumnName="CREDITS" />
+                <ScalarProperty Name="VIP_NAME" ColumnName="VIP_NAME" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
