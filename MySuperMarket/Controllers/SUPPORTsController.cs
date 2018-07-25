@@ -17,8 +17,9 @@ namespace MySuperMarket.Controllers
         // GET: SUPPORTs
         public ActionResult Index()
         {
-            var sUPPORT = db.SUPPORT.Include(s => s.INCOME).Include(s => s.SPONSOR);
-            return View(sUPPORT.ToList());
+            //var sUPPORT = db.SUPPORT.Include(s => s.INCOME).Include(s => s.SPONSOR);
+            //return View(sUPPORT.ToList());
+            return View();
         }
 
         // GET: SUPPORTs/Details/5
